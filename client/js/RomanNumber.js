@@ -78,7 +78,7 @@ define([], function(){
 	};
 	RomanNumber.num2str = function(num) {
 		var str = '', times;
-		if (num<0 || num>4000) {
+		if (num<0 || num>3999) {
 			throw 'invalid';
 		}
 		for (var i=ARRAY_NUM.length-1; i>=0; i--) {

@@ -8,6 +8,7 @@ define(['RomanNumber'], function(romanNumber){
 
 		$('#firstNum').removeClass('invalid');
 		$('#secondNum').removeClass('invalid');
+		$('#sum').removeClass('invalid');
 
 		str1 = $('#firstNum').val();
 		str2 = $('#secondNum').val();
@@ -23,9 +24,8 @@ define(['RomanNumber'], function(romanNumber){
 			$('#secondNum').addClass('invalid');
 		}
 
-		if ((num1 === -1) || (num2 === -1)) {
-			$("#sum").val('');
-		} else {
+		$("#sum").val('');
+		if ((num1 !== -1) && (num2 !== -1)) {
 			sum= num1 + num2;
 			try {
 				sumStr = romanNumber.num2str(sum);

@@ -17,5 +17,5 @@ Launch **client/index.html** to start Roman Number Calculator
 ### Unit test
 1. run 
 ```sh
-	npm test
+	$ npm test
 ```
