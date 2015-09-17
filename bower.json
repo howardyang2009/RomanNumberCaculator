@@ -1,0 +1,9 @@
+{
+  "name": "angular-client-side-auth",
+  "dependencies": {
+  	"requirejs": null,
+  	"jquery": null
+  },
+  "devDependencies": {
+  }
+}

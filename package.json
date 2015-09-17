@@ -1,0 +1,30 @@
+{
+  "name": "RomanNumberCalculator",
+  "version": "0.0.1",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "subdomain": "RomanNumberCalculator",
+  "scripts": {
+    "start": "grunt dev",
+    "test": "node node_modules/karma/bin/karma start test/karma.conf.js",
+    "postinstall": "bower install"
+  },
+  "engines": {
+    "node": "0.8.x"
+  },
+  "devDependencies": {
+    "bower": "latest",
+    "grunt": "latest",
+    "grunt-cli": "latest",
+    "jasmine-core": "^2.3.4",
+    "karma": "latest",
+    "karma-chrome-launcher": "latest",
+    "karma-htmlfile-reporter": "latest",
+    "karma-jasmine": "^0.3.6",
+    "karma-requirejs": "latest",
+    "requirejs": "latest"
+  }
+}

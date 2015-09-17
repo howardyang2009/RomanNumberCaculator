@@ -1,0 +1,24 @@
+.error {
+	display: none;
+	color: red;
+	margin-left: 8px;
+}
+.invalid + .error {
+	display: inline-block;
+}
+
+input {
+	margin: 10px;
+	padding: 0 4px;
+	text-align: right;
+	width: 150px;
+}
+
+#firstNum {
+	margin-left: 20px;
+}
+
+.button {
+	text-align: center;
+	width: 170px;
+}
