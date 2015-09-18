@@ -14,6 +14,7 @@ define(['client/js/RomanNumber'], function(romanNumber) {
         	expect(romanNumber.str2num('VI')).toEqual(6);
         	expect(romanNumber.str2num('IX')).toEqual(9);
         	expect(romanNumber.str2num('CM')).toEqual(900);
+            expect(romanNumber.str2num('XCIX')).toEqual(99);
         	expect(romanNumber.str2num('MCLI')).toEqual(1151);
         	expect(romanNumber.str2num('DXV')).toEqual(515);
         	expect(romanNumber.str2num('MDCLXVI')).toEqual(1666);
@@ -31,11 +32,13 @@ define(['client/js/RomanNumber'], function(romanNumber) {
         	expect(romanNumber.num2str(6)).toEqual('VI');
         	expect(romanNumber.num2str(9)).toEqual('IX');
         	expect(romanNumber.num2str(900)).toEqual('CM');
+            expect(romanNumber.num2str(99)).toEqual('XCIX');
         	expect(romanNumber.num2str(1151)).toEqual('MCLI');
         	expect(romanNumber.num2str(515)).toEqual('DXV');
         	expect(romanNumber.num2str(1666)).toEqual('MDCLXVI');
         	expect(romanNumber.num2str(74)).toEqual('LXXIV');
         	expect(romanNumber.num2str(502)).toEqual('DII');
+            expect(romanNumber.num2str(576)).toEqual('DLXXVI');
         	expect(romanNumber.num2str(3003)).toEqual('MMMIII');
         	expect(romanNumber.num2str(3999)).toEqual('MMMCMXCIX');
         });

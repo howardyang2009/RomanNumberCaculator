@@ -7,6 +7,6 @@ requirejs.config({
 
 
 requirejs(['main', 'jquery'], function(main) {
-	temp = new main;
+	var temp = new main;
 	window.compute = temp.compute;
 });
