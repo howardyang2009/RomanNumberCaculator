@@ -66,7 +66,7 @@ define(['client/js/RomanNumber'], function(romanNumber) {
             expect(romanNumber.num2str(3999999)).toEqual('mmmcmxcMxCMXCIX');
         });
 
-        it ('num2str function', function() {
+        it ('num2str function invalid', function() {
             expect(function(){romanNumber.num2str(0)}).toThrow();
             expect(function(){romanNumber.num2str(4000000)}).toThrow();
         });
