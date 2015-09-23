@@ -4,7 +4,7 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/howardyang2009/RomanNumberCaculator.git"
   },
   "subdomain": "RomanNumberCalculator",
   "scripts": {
@@ -13,7 +13,7 @@
     "postinstall": "bower install"
   },
   "engines": {
-    "node": "0.8.x"
+    "node": ">=0.10.1"
   },
   "devDependencies": {
     "bower": "latest",
