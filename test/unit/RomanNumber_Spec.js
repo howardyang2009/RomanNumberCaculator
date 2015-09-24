@@ -1,7 +1,7 @@
 define(['client/js/RomanNumber'], function(romanNumber) {
     'use strict';
 
-    describe("RomaNumber.js", function() {
+    describe("RomanNumber.js", function() {
 
         beforeEach(function() {});
 
@@ -40,6 +40,7 @@ define(['client/js/RomanNumber'], function(romanNumber) {
             expect(function(){romanNumber.str2num('CMM')}).toThrow();
             expect(function(){romanNumber.str2num('VV')}).toThrow();
             expect(function(){romanNumber.str2num('VIIII')}).toThrow();
+            expect(function(){romanNumber.str2num('IVI')}).toThrow();
         });
 
         it ('num2str function', function() {

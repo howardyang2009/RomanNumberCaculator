@@ -85,6 +85,12 @@ define([], function(){
 			}
 			index++;
 		}
+
+		temp = this.num2str(num);
+		if (temp !== str) {
+			throw 'non-standard Roman Number';
+		}
+
 		return num;
 	};
 	RomanNumber.num2str = function(num) {
