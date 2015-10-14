@@ -1,12 +1,13 @@
 requirejs.config({
     baseUrl: './js',
     paths: {
-    	'jquery':'../libs/jquery/dist/jquery'
+    	'jquery':'../libs/jquery/dist/jquery',
+    	'tools': '../tools',
+    	'app': './'
     }
 });
 
 
-requirejs(['main', 'jquery'], function(main) {
-	var temp = new main;
-	window.compute = temp.compute;
+requirejs(['main', 'tools/Class', 'jquery'], function(main) {
+	window.compute = main.compute;
 });

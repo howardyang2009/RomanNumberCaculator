@@ -1,9 +1,9 @@
-define(['client/js/RomanNumber'], function(RomanNumber) {
+define(['client/js/RomanNumberEx'], function(romanNumberEx) {
     'use strict';
 
-    var romanNumber = new RomanNumber; 
+    var romanNumber = new romanNumberEx;
 
-    describe("RomanNumber.js", function() {
+    describe("RomanNumberEx.js", function() {
 
         beforeEach(function() {});
 
@@ -30,7 +30,7 @@ define(['client/js/RomanNumber'], function(RomanNumber) {
             expect(romanNumber.str2num('MDCLXVI')).toEqual(1666);
         	expect(romanNumber.str2num('MMMIII')).toEqual(3003);
         	expect(romanNumber.str2num('MMMCMXCIX')).toEqual(3999);
-            // expect(romanNumber.str2num('mmmcmxcMxCMXCIX')).toEqual(3999999);
+            expect(romanNumber.str2num('mmmcmxcMxCMXCIX')).toEqual(3999999);
         });
 
         it ('str2num function invalid', function() {
@@ -66,12 +66,12 @@ define(['client/js/RomanNumber'], function(RomanNumber) {
             expect(romanNumber.num2str(1666)).toEqual('MDCLXVI');
         	expect(romanNumber.num2str(3003)).toEqual('MMMIII');
         	expect(romanNumber.num2str(3999)).toEqual('MMMCMXCIX');
-            // expect(romanNumber.num2str(3999999)).toEqual('mmmcmxcMxCMXCIX');
+            expect(romanNumber.num2str(3999999)).toEqual('mmmcmxcMxCMXCIX');
         });
 
         it ('num2str function invalid', function() {
             expect(function(){romanNumber.num2str(0)}).toThrow();
-            expect(function(){romanNumber.num2str(4000)}).toThrow();
+            expect(function(){romanNumber.num2str(4000000)}).toThrow();
         });
     });
 });
