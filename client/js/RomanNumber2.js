@@ -38,6 +38,7 @@ define([], function(){
 		}
 
 		digits = num.toString().split('')
+
 	  	for (var i=0; i < digits.length; i++){
 	    	numeral += this.numeralCodes[digits.length-1-i][parseInt(digits[i])];
 	  	}
@@ -57,5 +58,6 @@ define([], function(){
 		}
 		return this.lookup[c];
 	};
+
 	return RomanNumber2;
 });

@@ -1,4 +1,4 @@
-define(['app/RomanNumber'], function(romanNumber) {
+define(['app/RomanNumber3'], function(romanNumber3) {
     'use strict';
     var romanNumberEx = (function(_super) {
         __extends(romanNumberEx, _super);
@@ -11,6 +11,6 @@ define(['app/RomanNumber'], function(romanNumber) {
         }
 
         return romanNumberEx;
-    })(romanNumber);
+    })(romanNumber3);
     return romanNumberEx;
 });

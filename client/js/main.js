@@ -1,4 +1,4 @@
-define(['RomanNumber', 'RomanNumberEx', 'RomanNumber2'], function(romanNumber, romanNumberEx, romanNumber2){
+define(['RomanNumber', 'RomanNumberEx', 'RomanNumber2', 'RomanNumber3'], function(romanNumber, romanNumberEx, romanNumber2, romanNumber3){
 	"use strict";
 	var main = {};
 	main.compute = function() {
@@ -8,10 +8,12 @@ define(['RomanNumber', 'RomanNumberEx', 'RomanNumber2'], function(romanNumber, r
 		calcValue = $('input[name=Caculator]:checked').val();
 		if (calcValue === 'RomanNumber') {
 			caculator = new romanNumber;
-		} else if (calcValue === 'RomanNumberEx') {
-			caculator = new romanNumberEx;
-		} else {
+		} else if (calcValue === 'RomanNumber2') {
 			caculator = new romanNumber2;
+		} else if (calcValue === 'RomanNumber3'){
+			caculator = new romanNumber3;
+		} else {
+			caculator = new romanNumberEx;
 		}
 
 		$('#firstNum').removeClass('invalid');
